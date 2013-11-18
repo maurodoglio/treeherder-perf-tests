@@ -1,0 +1,41 @@
+[
+    {
+        "log_file": "http://ftp.mozilla.org/pub/mozilla.org/firefox/try-builds/kgupta@mozilla.com-795aa729ab2f/try-macosx64-debug/try-macosx64-debug-bm87-try1-build354.txt.gz",
+        "job_description": "build",
+        "has_failures": true
+    },
+    {
+        "log_file": "http://ftp.mozilla.org/pub/mozilla.org/firefox/try-builds/kgupta@mozilla.com-795aa729ab2f/try-linux64/try-linux64-bm83-try1-build127.txt.gz",
+        "job_description": "build",
+        "has_failures": false
+    },
+    {
+        "log_file": "http://ftp.mozilla.org/pub/mozilla.org/firefox/tinderbox-builds/mozilla-inbound-linux-debug/1384773461/mozilla-inbound_fedora-debug_test-mochitest-browser-chrome-bm51-tests1-linux-build1186.txt.gz",
+        "job_description": "mochitest",
+        "has_failures": true
+    },
+    {
+        "log_file": "http://ftp.mozilla.org/pub/mozilla.org/firefox/tinderbox-builds/mozilla-inbound-linux-debug/1384778020/mozilla-inbound_ubuntu32_vm-debug_test-mochitest-5-bm54-tests1-linux-build1174.txt.gz",
+        "job_description": "mochitest",
+        "has_failures": false
+    },
+    {
+        "log_file": "http://ftp.mozilla.org/pub/mozilla.org/firefox/tinderbox-builds/mozilla-central-macosx64/1384772255/mozilla-central_lion_test-reftest-bm79-tests1-macosx-build303.txt.gz",
+        "job_description": "reftest",
+        "has_failures": true
+    },
+    {"log_file" : "http://ftp.mozilla.org/pub/mozilla.org/firefox/tinderbox-builds/mozilla-central-macosx64/1384772255/mozilla-central_lion_test-jsreftest-bm75-tests1-macosx-build283.txt.gz",
+        "job_description": "reftest",
+        "has_failures": false
+    },
+    {
+        "log_file": "http://ftp.mozilla.org/pub/mozilla.org/firefox/nightly/2013/11/2013-11-13-03-45-01-mozilla-b2g18/mozilla-b2g18_ubuntu64_hw_test-chromez-bm51-tests1-linux-build2.txt.gz",
+        "job_description": "talos",
+        "has_failures": true
+    },
+    {
+        "log_file": "http://ftp.mozilla.org/pub/mozilla.org/firefox/tinderbox-builds/mozilla-b2g18-linux64/1384275211/mozilla-b2g18_ubuntu64_hw_test-chromez-bm67-tests1-linux-build2.txt.gz",
+        "job_description": "talos",
+        "has_failures": false
+    }
+]

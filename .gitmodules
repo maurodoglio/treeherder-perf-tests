@@ -1,0 +1,3 @@
+[submodule "treeherder-service"]
+	path = treeherder-service
+	url = git://github.com/mozilla/treeherder-service.git
