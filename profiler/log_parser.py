@@ -1,16 +1,21 @@
 import cProfile
-import simplejson as json
+import json
 from collections import defaultdict
+import gevent
 from treeherder.log_parser.artifactbuildercollection import ArtifactBuilderCollection
 
 
 def parse_logs(logs, check_errors):
-    for log in logs:
-        artifact_builder_collection = ArtifactBuilderCollection(
-            log,
-            check_errors=check_errors,
-        )
-        artifact_builder_collection.parse()
+    parsers = [gevent.spawn(parse_log, log, check_errors) for log in logs]
+    gevent.joinall(parsers)
+
+
+def parse_log(log, check_errors):
+    artifact_builder_collection = ArtifactBuilderCollection(
+        log,
+        check_errors=check_errors,
+    )
+    artifact_builder_collection.parse()
 
 
 class ParseLogProfiler(object):

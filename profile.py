@@ -1,6 +1,8 @@
 import sys
 import os
 import argparse
+from gevent import monkey
+monkey.patch_socket()
 
 
 def main():
